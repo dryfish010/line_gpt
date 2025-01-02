@@ -1,9 +1,9 @@
 {
     "name": "line-gpt",
     "version": "1.0.0",
-    "main": "api/line.js",
+    "main": "api/index.js",
     "scripts": {
-      "start": "node api/line.js"
+      "start": "node api/index.js"
     },
     "dependencies": {
       "@line/bot-sdk": "^8.0.0",
