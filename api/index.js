@@ -1,3 +1,5 @@
+import OpenAI from "openai"
+
 const { Client } = require("@line/bot-sdk");
 const { Configuration, OpenAIApi } = require("openai");
 
@@ -32,7 +34,7 @@ module.exports = async (req, res) => {
 
         try {
           const completion = await openai.createChatCompletion({
-            model: "gpt-4",
+            model: "dall-e-3",
             messages: [{ role: "user", content: userMessage }],
           });
 
